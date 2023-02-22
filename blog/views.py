@@ -8,6 +8,7 @@ from rest_framework.throttling import UserRateThrottle
 from .throttles import BlogRateThrottle
 from rest_framework.response import Response
 
+
 # Create your views here.
 class StoriList(ListAPIView):
     queryset = Stori.objects.all()   
