@@ -26,7 +26,7 @@ STATUS = (
 """stori is swahili for story. was thinking of using the slang version 'risto'/'riba' in there.. """
 class Stori(models.Model):
     STATUS_CHOICES = (
-        ('drafted', 'drafted'),
+        ('draft', 'draft'),
         ('published', 'published'),
     )
 
