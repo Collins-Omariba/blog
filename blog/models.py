@@ -39,7 +39,7 @@ class Stori(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0) #"""This here serves to indicate whether a stori has been published or not."""
     category = models.ForeignKey(Category,on_delete=models.PROTECT)
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='drafted')
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='draft')
     published_date = models.DateTimeField(blank=True, null=True)
     
     def publish(self):
