@@ -7,6 +7,7 @@ from django.dispatch import receiver
 from django.urls import reverse
 from django.utils import timezone
 
+# Category
 class Category(models.Model):
     name = models.CharField(max_length = 50)
     created_at = models.DateTimeField(auto_now_add=True) 
@@ -15,8 +16,7 @@ class Category(models.Model):
         return self.name
     class Meta:
         verbose_name_plural = "Categories"
-        
-    
+
 """ Stori """
 """ stori_status """
 STATUS = (
